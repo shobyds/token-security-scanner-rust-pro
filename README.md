@@ -29,7 +29,7 @@ I offer **5 Free Live Scans** to prove the tool's accuracy and speed before you 
 I am selling the **full source code** to fund a **$500 project goal**.
 **You get the code, you own the tool**.
 
-### **Price: 20 DAI **
+### Price: 20 DAI
 *Accepted on **Arbitrum** or **Optimism** (Near-zero gas fees).*
 
 #### **The Delivery Process:**
