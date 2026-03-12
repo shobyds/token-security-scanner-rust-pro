@@ -1,0 +1,29 @@
+{
+  "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+  "is_known_scammer": false,
+  "previous_rugs": 0,
+  "deployer_risk_score": 30,
+  "critical_alerts": 0,
+  "high_alerts": 0,
+  "alerts": [],
+  "providers_checked": [
+    "Etherscan",
+    "ScamSniffer",
+    "MistTrack",
+    "AMLBot"
+  ],
+  "providers_succeeded": [
+    "Etherscan",
+    "ScamSniffer",
+    "MistTrack",
+    "AMLBot"
+  ],
+  "providers_failed": [],
+  "total_time_ms": 5609,
+  "timing_breakdown": {
+    "etherscan_ms": 5609,
+    "scam_sniffer_ms": 693,
+    "misttrack_ms": 1405,
+    "amlbot_ms": 786
+  }
+}

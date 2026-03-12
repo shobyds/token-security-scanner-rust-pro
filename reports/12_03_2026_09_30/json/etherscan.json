@@ -1,0 +1,15 @@
+{
+  "token_address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+  "contract_name": "",
+  "compiler_version": "",
+  "is_verified": false,
+  "total_supply": "",
+  "holder_count": 0,
+  "abi": null,
+  "source_code": null,
+  "optimization_enabled": false,
+  "optimization_runs": null,
+  "license_type": null,
+  "is_proxy": false,
+  "implementation": null
+}

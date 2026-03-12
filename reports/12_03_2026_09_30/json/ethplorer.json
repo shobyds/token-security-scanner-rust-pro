@@ -1,0 +1,23 @@
+{
+  "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+  "name": "Uniswap",
+  "symbol": "UNI",
+  "decimals": "18",
+  "totalSupply": "1000000000000000000000000000",
+  "holdersCount": 379537,
+  "owner": "",
+  "transfersCount": 8109271,
+  "contractInfo": {
+    "creatorAddress": "0x41653c7d61609d856f29355e404f310ec4142cfb",
+    "creationTransactionHash": "0x4b37d2f343608457ca3322accdab2811c707acf3eb07a40dd8d9567093ea5b82",
+    "creationTimestamp": 1600107086
+  },
+  "price": {
+    "rate": 3.875623312370903,
+    "marketCapUsd": 2455694002.294585,
+    "availableSupply": 633625562.7465303,
+    "volume24h": 192766978.22348607
+  },
+  "website": "https://uniswap.org",
+  "image": "/images/UNI1f9840a8.png"
+}

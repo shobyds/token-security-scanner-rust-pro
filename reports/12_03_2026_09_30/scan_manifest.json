@@ -1,0 +1,274 @@
+{
+  "scan_info": {
+    "token_address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+    "token_name": null,
+    "token_symbol": null,
+    "chain": "ethereum",
+    "scan_timestamp": "2026-03-12T09:30:06.064157711+00:00",
+    "scan_duration_ms": 8259,
+    "scan_directory": ""
+  },
+  "api_responses": {
+    "honeypot": "json/honeypot.json",
+    "alchemysimulation": "json/alchemy_simulation.json",
+    "phase4source": "json/phase4_source.json",
+    "defillama": "json/defillama.json",
+    "graphanalytics": "json/graph_analytics.json",
+    "goplus": "json/goplus.json",
+    "dexscreener": "json/dexscreener.json",
+    "ethplorer": "json/ethplorer.json",
+    "moralis": "json/moralis.json",
+    "etherscan": "json/etherscan.json",
+    "blockscout": "json/blockscout.json",
+    "phase4deployer": "json/phase4_deployer.json",
+    "rpcsimulation": "json/rpc_simulation.json",
+    "phase4blacklist": "json/phase4_blacklist.json",
+    "scammerdetection": "json/scammer_detection.json",
+    "lplock": "json/lp_lock.json"
+  },
+  "reports": {
+    "json": "reports/token_report.json",
+    "html": "reports/token_report.html"
+  },
+  "api_success_count": 18,
+  "api_failure_count": 0,
+  "tri_score": 25.50313,
+  "rug_probability": 0.1,
+  "risk_level": "MODERATE_RISK",
+  "llm_analysis_prompt": "Analyze this token's security and risk profile based on the provided API data.\n\n1. **Liquidity Analysis** (Dexscreener):\n   - Review liquidity USD and trends\n   - Check pool count and dominance ratio\n   - Analyze volume patterns\n\n2. **Contract Security** (GoPlus/Etherscan):\n   - Check for honeypot indicators\n   - Review owner privileges\n   - Analyze source code risks\n\n3. **Holder Distribution** (Moralis):\n   - Review top 10 holder concentration\n   - Check for labeled holders (CEX, DAO)\n   - Identify potential whale wallets\n\n4. **Price Analysis** (DefiLlama):\n   - Review current price\n   - Check price confidence score\n\n6. **Overall Risk Assessment**:\n   - Synthesize findings from all data sources\n   - Provide clear risk rating\n   - Highlight major red flags\n   - Note any positive indicators\n",
+  "files": [
+    {
+      "path": "json/dexscreener.json",
+      "file_type": "api_response",
+      "provider": "dexscreener",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "liquidity_usd",
+        "volume_24h",
+        "price_usd"
+      ],
+      "size_bytes": 570
+    },
+    {
+      "path": "json/goplus.json",
+      "file_type": "api_response",
+      "provider": "goplus",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "contract_risks"
+      ],
+      "size_bytes": 513
+    },
+    {
+      "path": "json/honeypot.json",
+      "file_type": "api_response",
+      "provider": "honeypot",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "is_honeypot",
+        "buy_tax",
+        "sell_tax"
+      ],
+      "size_bytes": 224
+    },
+    {
+      "path": "json/etherscan.json",
+      "file_type": "api_response",
+      "provider": "etherscan",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "contract_metadata"
+      ],
+      "size_bytes": 354
+    },
+    {
+      "path": "json/moralis.json",
+      "file_type": "api_response",
+      "provider": "moralis",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "holder_analysis"
+      ],
+      "size_bytes": 2006
+    },
+    {
+      "path": "json/ethplorer.json",
+      "file_type": "api_response",
+      "provider": "ethplorer",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "holders_count",
+        "total_supply"
+      ],
+      "size_bytes": 710
+    },
+    {
+      "path": "json/etherscan.json",
+      "file_type": "api_response",
+      "provider": "etherscan",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "deployer_info"
+      ],
+      "size_bytes": 158
+    },
+    {
+      "path": "json/etherscan.json",
+      "file_type": "api_response",
+      "provider": "etherscan",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "source_verification"
+      ],
+      "size_bytes": 35519
+    },
+    {
+      "path": "json/blockscout.json",
+      "file_type": "api_response",
+      "provider": "blockscout",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "token_metadata",
+        "name",
+        "holder_count"
+      ],
+      "size_bytes": 400
+    },
+    {
+      "path": "json/alchemy_simulation.json",
+      "file_type": "api_response",
+      "provider": "alchemysimulation",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "is_honeypot",
+        "buy_simulation",
+        "sell_simulation"
+      ],
+      "size_bytes": 317
+    },
+    {
+      "path": "json/rpc_simulation.json",
+      "file_type": "api_response",
+      "provider": "rpcsimulation",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "is_honeypot",
+        "buy_simulation",
+        "router_used"
+      ],
+      "size_bytes": 380
+    },
+    {
+      "path": "json/phase4_deployer.json",
+      "file_type": "api_response",
+      "provider": "phase4deployer",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "wallet_age_days",
+        "total_contracts"
+      ],
+      "size_bytes": 215
+    },
+    {
+      "path": "json/phase4_source.json",
+      "file_type": "api_response",
+      "provider": "phase4source",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "is_verified"
+      ],
+      "size_bytes": 345
+    },
+    {
+      "path": "json/phase4_blacklist.json",
+      "file_type": "api_response",
+      "provider": "phase4blacklist",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "has_blacklist"
+      ],
+      "size_bytes": 107
+    },
+    {
+      "path": "json/scammer_detection.json",
+      "file_type": "api_response",
+      "provider": "scammerdetection",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "is_known_scammer",
+        "deployer_risk_score"
+      ],
+      "size_bytes": 576
+    },
+    {
+      "path": "json/lp_lock.json",
+      "file_type": "api_response",
+      "provider": "lplock",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "liquidity_locked"
+      ],
+      "size_bytes": 198
+    },
+    {
+      "path": "json/graph_analytics.json",
+      "file_type": "api_response",
+      "provider": "graphanalytics",
+      "success": true,
+      "error": null,
+      "fields_populated": [],
+      "size_bytes": 352
+    },
+    {
+      "path": "json/defillama.json",
+      "file_type": "api_response",
+      "provider": "defillama",
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "price",
+        "confidence",
+        "symbol"
+      ],
+      "size_bytes": 118
+    },
+    {
+      "path": "reports/token_report.json",
+      "file_type": "report",
+      "provider": null,
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "comprehensive_token_data"
+      ],
+      "size_bytes": null
+    },
+    {
+      "path": "reports/token_report.html",
+      "file_type": "report",
+      "provider": null,
+      "success": true,
+      "error": null,
+      "fields_populated": [
+        "human_readable_report"
+      ],
+      "size_bytes": null
+    }
+  ]
+}

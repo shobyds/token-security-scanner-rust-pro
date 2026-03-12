@@ -1,0 +1,22 @@
+{
+  "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+  "name": "Uniswap",
+  "symbol": "UNI",
+  "price_usd": 3.88,
+  "liquidity_usd": 16630745.82,
+  "volume_24h": -0.0,
+  "pair_count": 1,
+  "chain_id": "ethereum",
+  "pair_created_at": 1620157956000,
+  "total_liquidity_usd": 16630745.82,
+  "primary_pool_liquidity": 16630745.82,
+  "dominance_ratio": 1.0,
+  "top3_liquidity_ratio": 1.0,
+  "volume_h1": 20888.18,
+  "buys_24h": 130,
+  "sells_24h": 172,
+  "market_cap": 2462477652.0,
+  "fdv": 3491280564.0,
+  "unique_traders_24h": 302,
+  "trading_activity_score": 9
+}

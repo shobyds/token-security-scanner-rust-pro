@@ -1,0 +1,11 @@
+{
+  "token_address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+  "chain": "eth",
+  "is_honeypot": false,
+  "buy_tax": 5.0,
+  "sell_tax": 5.0,
+  "can_buy": true,
+  "can_sell": true,
+  "error": null,
+  "simulation": null
+}

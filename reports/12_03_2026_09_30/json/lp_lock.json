@@ -1,0 +1,9 @@
+{
+  "liquidity_locked": false,
+  "lock_percentage": null,
+  "unlock_date": null,
+  "lock_duration_days": null,
+  "locker_name": null,
+  "locked_value_usd": null,
+  "protocol_owned_liquidity": true
+}

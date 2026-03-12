@@ -1,0 +1,78 @@
+{
+  "top10_holders_pct": 42.78327307463672,
+  "dev_wallet_pct": null,
+  "labeled_holders": [
+    {
+      "address": "0x1a9c8182c09f50c8318d769245bea52c32be35bc",
+      "label": null,
+      "pct": 26.46348572901,
+      "is_contract": true,
+      "is_safe": false
+    },
+    {
+      "address": "0xf977814e90da44bfa03b6295a0616a897441acec",
+      "label": "Binance 8",
+      "pct": 5.6573534717000005,
+      "is_contract": false,
+      "is_safe": true
+    },
+    {
+      "address": "0x61cb39bece033c5bda281747db1c15cced2096eb",
+      "label": null,
+      "pct": 2.3047480513298524,
+      "is_contract": false,
+      "is_safe": false
+    },
+    {
+      "address": "0x611f7bf868a6212f871e89f7e44684045ddfb09d",
+      "label": null,
+      "pct": 1.49326571702,
+      "is_contract": false,
+      "is_safe": false
+    },
+    {
+      "address": "0x5069a64bc6616dec1584ee0500b7813a9b680f7e",
+      "label": null,
+      "pct": 1.4880124557563608,
+      "is_contract": false,
+      "is_safe": false
+    },
+    {
+      "address": "0x36ca0abdf3852f00aee7798c7dfb5ead5d3fec2a",
+      "label": null,
+      "pct": 1.261133135576091,
+      "is_contract": false,
+      "is_safe": false
+    },
+    {
+      "address": "0x090d4613473dee047c3f2706764f49e0821d256e",
+      "label": "Uniswap: Community Token Distributor",
+      "pct": 1.257122184427884,
+      "is_contract": true,
+      "is_safe": true
+    },
+    {
+      "address": "0x6d278351f4a973d1349ef1e54ed37daed0799e19",
+      "label": null,
+      "pct": 1.0286054264096078,
+      "is_contract": false,
+      "is_safe": false
+    },
+    {
+      "address": "0x19d373d0f95f00d368a8d57605af746c4ea9b1d0",
+      "label": null,
+      "pct": 0.92954690339692,
+      "is_contract": false,
+      "is_safe": false
+    },
+    {
+      "address": "0x177df24addc9a216f927d2a894ab0b6eec59eb09",
+      "label": null,
+      "pct": 0.9000000000099999,
+      "is_contract": false,
+      "is_safe": false
+    }
+  ],
+  "unlabeled_whale_count": 1,
+  "contract_holder_pct": 27.720607913437885
+}

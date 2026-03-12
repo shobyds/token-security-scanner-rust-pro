@@ -1,0 +1,11 @@
+{
+  "address": "",
+  "first_tx_block": 0,
+  "wallet_age_days": 0,
+  "total_contracts": 0,
+  "previous_rugs": 0,
+  "is_known_scammer": false,
+  "deployer_risk_score": 0,
+  "contracts": [],
+  "creation_timestamp": 0
+}

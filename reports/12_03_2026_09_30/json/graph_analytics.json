@@ -1,0 +1,16 @@
+{
+  "total_trades": 0,
+  "unique_buyers": 0,
+  "unique_sellers": 0,
+  "buy_volume_usd": 0.0,
+  "sell_volume_usd": 0.0,
+  "volume_24h_usd": 0.0,
+  "bpi": 0.0,
+  "volume_quality": 0.0,
+  "time_window_hours": 0,
+  "unique_traders": 0,
+  "unique_traders_24h": null,
+  "holder_growth_rate": null,
+  "trading_activity_score": null,
+  "daily_trade_data": []
+}

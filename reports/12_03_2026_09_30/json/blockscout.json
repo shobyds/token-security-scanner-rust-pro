@@ -1,0 +1,16 @@
+{
+  "token_address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+  "name": "Uniswap",
+  "symbol": "UNI",
+  "decimals": 18,
+  "total_supply": "1000000000000000000000000000",
+  "holder_count": 406831,
+  "creator_address": null,
+  "creation_tx_hash": null,
+  "creation_block": null,
+  "is_verified": true,
+  "contract_name": "Uni",
+  "token_type": "ERC-20",
+  "market_cap": null,
+  "price_usd": null
+}

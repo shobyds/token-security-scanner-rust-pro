@@ -1,0 +1,14 @@
+{
+  "is_verified": false,
+  "contract_name": null,
+  "compiler_version": null,
+  "risk_flags": [],
+  "source_risk_score": 0,
+  "owner_drain_in_transfer": false,
+  "dynamic_fee_setter": false,
+  "assembly_in_transfer": false,
+  "owner_only_transfer": false,
+  "selfdestruct_capable": false,
+  "has_blacklist": false,
+  "has_tax_function": false
+}

@@ -1,0 +1,16 @@
+{
+  "token_address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+  "is_honeypot": false,
+  "reason": null,
+  "buy_simulation": {
+    "success": true,
+    "error": null,
+    "revert_reason": null,
+    "gas_used": null,
+    "output": "Bytes(0x)"
+  },
+  "sell_simulation": null,
+  "can_buy": true,
+  "can_sell": true,
+  "router_used": "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D"
+}

@@ -1,0 +1,20 @@
+{
+  "token_address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984",
+  "chain": "eth",
+  "owner_can_mint": false,
+  "owner_can_blacklist": false,
+  "lp_locked": false,
+  "hidden_owner": false,
+  "selfdestruct": false,
+  "is_proxy": false,
+  "can_be_upgraded": false,
+  "trade_cannot_be_paused": true,
+  "anti_whale_modifiable": false,
+  "personal_privilege": false,
+  "owner_address": null,
+  "creator_address": null,
+  "deployer_balance": null,
+  "holder_count": null,
+  "external_call": null,
+  "risk_flags": []
+}
