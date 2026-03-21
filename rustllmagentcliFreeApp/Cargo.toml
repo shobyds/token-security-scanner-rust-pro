@@ -1,0 +1,108 @@
+[package]
+name = "rust_llm_agent"
+version = "0.1.0"
+edition = "2024"
+description = "Rust LLM Agent CLI with Ratatui TUI"
+authors = ["Rust LLM Agent Team"]
+
+[dependencies]
+# TUI Framework (Phase 4)
+ratatui = { version = "0.28", optional = true }
+crossterm = { version = "0.28", optional = true }
+
+# Async Runtime
+tokio = { version = "1.39", features = ["full"] }
+futures = "0.3"
+
+# HTTP Client for LLM API
+reqwest = { version = "0.12", features = ["json", "stream", "blocking", "http2", "gzip"] }
+
+# Ethereum RPC Client (Phase 2: ERC20 RPC calls)
+ethers = "2.0"
+
+# Hex encoding for RPC operations
+hex = "0.4"
+
+# JSON Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# Error Handling
+anyhow = "1.0"
+thiserror = "1.0"
+
+# Environment variable loading
+dotenvy = "0.15"
+
+# Global static initialization
+once_cell = "1.19"
+
+# Logging
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+tracing-appender = "0.2"
+
+# Configuration
+config = "0.14"
+toml = "0.8"
+
+# File System Operations
+walkdir = "2.5"
+ignore = "0.4"
+globset = "0.4"
+
+# Regular Expressions
+regex = "1.10"
+
+# String Manipulation
+similar = "2.5"
+
+# Git Integration (optional for Phase 5)
+git2 = { version = "0.18", optional = true }
+
+# Code Analysis (optional for Phase 5)
+tree-sitter = { version = "0.22", optional = true }
+tree-sitter-rust = { version = "0.21", optional = true }
+
+# Template Engine (optional for future)
+tera = { version = "1.19", optional = true }
+
+# CLI Arguments
+clap = { version = "4.5", features = ["derive"] }
+
+# Time Handling
+chrono = { version = "0.4", features = ["serde"] }
+
+# Unicode Width Calculation (for TUI)
+unicode-width = "0.1"
+
+# Text Wrapping
+textwrap = "0.16"
+
+# Directory utilities
+dirs = "5.0"
+
+# URL parsing
+url = "2.5"
+
+# TUI Widgets - use version compatible with ratatui 0.28
+throbber-widgets-tui = "0.7"
+
+# Test dependencies (required for inline tests in source)
+[dev-dependencies]
+mockito = "1.4"
+tempfile = "3.10"
+criterion = "0.5"
+insta = "1.38"
+
+[features]
+default = ["tui", "full-tools"]
+tui = ["ratatui", "crossterm"]
+full-tools = ["git2", "tree-sitter", "tree-sitter-rust"]
+minimal = []
+# Legacy LM Studio support (optional, not recommended for Groq API usage)
+lmstudio = []
+
+[[bin]]
+name = "tokenguard"
+path = "src/bin/tokenguard.rs"

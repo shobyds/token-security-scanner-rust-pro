@@ -1,0 +1,18 @@
+# HF Space Configuration for Token Risk LLM
+# This tells Hugging Face Spaces to use Docker and expose the correct port
+
+sdk: docker
+port: 7860
+
+# Hardware configuration (CPU is sufficient for Phi-3-mini)
+hardware: cpu
+
+# Enable GPU for faster inference (optional, requires paid HF Space)
+# hardware: t4-small
+
+# Environment variables
+env:
+  - name: HF_TOKEN
+    value: ""
+  - name: TRANSFORMERS_CACHE
+    value: /app/.cache

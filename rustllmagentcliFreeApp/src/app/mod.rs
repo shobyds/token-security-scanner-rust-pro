@@ -1,0 +1,5 @@
+//! Application state and management
+
+pub mod config;
+pub mod event;
+pub mod state;

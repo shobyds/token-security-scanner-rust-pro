@@ -25,17 +25,17 @@ I offer **5 Free Live Scans** to prove the tool's accuracy and speed before you 
 
 ---
 
-## 💰 Purchase Full Source Code ($20 USD)
-I am selling the **full source code** to fund a **$500 project goal**.
-**You get the code, you own the tool**.
+## 💰 ~~Purchase Full Source Code ($20 USD)~~
+~~I am selling the **full source code** to fund a **$500 project goal**~~.
+**You get the code Free, you own the tool**.
 
-### Price: 20 DAI
-*Accepted on **Arbitrum** or **Optimism** (Near-zero gas fees).*
+~~### Price: 20 DAI~~
+~~*Accepted on **Arbitrum** or **Optimism** (Near-zero gas fees).*~~
 
 #### **The Delivery Process:**
 1. **The Private Repo:** I will create a **Private GitHub Repository** and invite you as a collaborator.
 2. **The Audit:** I will push the **full Rust source code** to that repo. You can audit the code directly in the GitHub UI to ensure it is clean and professional.
-3. **The Payment:** Send **20 DAI** to a confirmed address on private repo.
+3. ~~**The Payment:** Send **20 DAI** to a confirmed address on private repo.~~
 4. **Permanent Access:** Once the transaction is confirmed, the repository access is yours permanently.
 
 > **Bonus:** If you are happy with the delivery, please **Star ⭐ this Public Repo** to support the project!

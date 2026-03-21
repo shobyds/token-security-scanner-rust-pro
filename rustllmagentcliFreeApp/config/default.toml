@@ -1,0 +1,127 @@
+# TokenGuard Configuration - Groq API & TRI Scoring
+# This configuration file provides defaults for all application settings
+
+# ─────────────────────────────────────────────────────────────────────────────
+# LLM Configuration (Groq API)
+# ─────────────────────────────────────────────────────────────────────────────
+[llm]
+url = "https://api.groq.com/openai/v1"
+model = "llama-3.1-8b-instant"
+temperature = 0.2
+max_tokens = 4096
+timeout_seconds = 120
+# Legacy LM Studio options (ignored when using Groq API)
+auto_discover = false
+network_scan_range = 40
+auto_detect_model = false
+# API key (legacy name, use GROQ_API_KEY env var instead)
+hf_api_key = ""
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Groq API Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+[phi3]
+# Groq API URL for chat completions (OpenAI-compatible format)
+# Note: Model is specified in the request payload, not the URL
+base_url = "https://api.groq.com/openai/v1"
+# Model to use (Llama-3.1-8B-Instant)
+model = "llama-3.1-8b-instant"
+# Groq API key
+# Recommended: Set via environment variable GROQ_API_KEY
+# Alternative: Provide here (less secure)
+api_key = ""
+# Request timeout in seconds
+timeout_secs = 30
+# Number of retries for failed requests
+retry_count = 3
+# Rug probability threshold to trigger LLM analysis (0.0-1.0)
+# Tokens with rug_prob >= this value will be sent to Groq for analysis
+rug_prob_threshold = 0.35
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Token Risk Index (TRI) Scoring Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+[tri]
+# Domain weights (must sum to 1.0)
+weights_contract = 0.30    # Contract security risk
+weights_ownership = 0.20   # Ownership concentration risk
+weights_liquidity = 0.20   # Liquidity safety risk
+weights_tax = 0.15         # Tax rate risk
+weights_volume = 0.10      # Volume authenticity risk
+weights_age = 0.05         # Token age risk
+
+# Alert thresholds
+alert_threshold = 45.0     # TRI score >= this triggers alerts
+danger_threshold = 65.0    # TRI score >= this is "Avoid" level
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Telegram Alerting Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+[telegram]
+# Telegram bot token (from @BotFather)
+bot_token = ""
+# Telegram chat ID for alerts
+chat_id = ""
+# Rug probability threshold for sending alerts (0.0-1.0)
+alert_threshold = 0.45
+# Rate limit in minutes between alerts for same token
+rate_limit_minutes = 10
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Agent Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+[agent]
+max_iterations = 15
+tool_timeout_seconds = 30
+
+# ─────────────────────────────────────────────────────────────────────────────
+# UI Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+[ui]
+scroll_speed = 3
+max_chat_history = 100
+max_tool_log = 50
+color_scheme = "default"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Tools Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+[tools]
+enable_system_commands = true
+enable_git = true
+enable_web_fetch = false
+max_search_results = 100
+file_size_limit_mb = 10
+
+# ─────────────────────────────────────────────────────────────────────────────
+# Logging Configuration
+# ─────────────────────────────────────────────────────────────────────────────
+[logging]
+level = "info"
+file = "agent.log"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# API Configuration (loaded from environment, but can be overridden here)
+# ─────────────────────────────────────────────────────────────────────────────
+[api]
+# GoPlus API
+goplus_api_key = ""
+goplus_api_secret = ""
+
+# Etherscan API
+etherscan_api_key = ""
+
+# Bitquery API
+bitquery_api_token = ""
+bitquery_endpoint = "https://graphql.bitquery.io"
+bitquery_application_id = ""
+
+# Dexscreener
+dexscreener_enabled = true
+dexscreener_timeout_ms = 10000
+dexscreener_retry_count = 3
+
+# Default chain for scanning
+default_chain = "ethereum"
+timeout_secs = 10
+retry_count = 3
